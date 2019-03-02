@@ -31,7 +31,7 @@ function concat(inputs, opts) {
 
   var renderer = ffmpeg()
     .input(filter)
-    .outputOptions('-acodec copy')
+    .outputOptions('-y -acodec copy')
 
   var output = opts.output
   if (output) {
